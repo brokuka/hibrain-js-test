@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<div class="page">
+		<form class="form" id="form" action="">
+			<select name="" id="">
+				<optgroup label="Выберите уровень">
+					<option value="15">Лёгкий</option>
+					<option value="10">Средний</option>
+					<option value="5">Сложный</option>
+				</optgroup>
+			</select>
+
+			<button class="btn btn--submit" type="submit">Подтвердить</button>
+		</form>
+
+		<div class="board hide">
+			<div class="monster_info">
+				<h1 class="monster_health" data-health="1">Здоровье монстра:&nbsp</h1>
+				<div class="monster_defense">
+					<span data-defense="0">Физическая защита:&nbsp</span>
+					<span data-defense="0">Магическая защита:&nbsp</span>
+				</div>
+			</div>
+
+			<div class="hero_info">
+				<div class="btn-group abilities"></div>
+				<h2 class="hero_health" data-health="0">Ваше Здоровье:&nbsp</h2>
+				<div class="hero_defense">
+					<span data-defense="0">Физическая защита:&nbsp</span>
+					<span data-defense="0">Магическая защита:&nbsp</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="finish hide">
+			<h1 class="finish_info">
+				Игра закончилась, но вы можете начать <span>заново</span>
+			</h1>
+			<button class="btn btn--retry">Повторить</button>
+		</div>
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+
+</html>
